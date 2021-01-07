@@ -493,10 +493,10 @@ See 'systemctl status home-vagrant.mount' for details.
 [    9.974732] cloud-init[695]: ci-info: | Device |  Up  |                  Address                  |      Mask     | Scope  |     Hw-Address    |
 [    9.984304] cloud-init[695]: ci-info: +--------+------+-------------------------------------------+---------------+--------+-------------------+
 [    9.985440] cloud-init[695]: ci-info: | enp0s3 | True |                 10.0.2.15                 | 255.255.255.0 | global | 02:bd:38:fa:b3:5d |
-[    9.986566] cloud-init[695]: ci-info: | enp0s3 | True |         fe80::bd:38ff:fefa:b35d/64        |       .       |  link  | 02:bd:38:fa:b3:5d |
-[    9.987663] cloud-init[695]: ci-info: | enp0s8 | True |              192.168.100.160              | 255.255.255.0 | global | 08:00:27:69:97:4e |
-[    9.988998] cloud-init[695]: ci-info: | enp0s8 | True | 2804:3f48:f144:3500:a00:27ff:fe69:974e/64 |       .       | global | 08:00:27:69:97:4e |
-[    9.990170] cloud-init[695]: ci-info: | enp0s8 | True |        fe80::a00:27ff:fe69:974e/64        |       .       |  link  | 08:00:27:69:97:4e |
+[    9.986566] cloud-init[695]: ci-info: | enp0s3 | True |         fe80::bd:38ff:fefa:b35d/64        |       .       |  link  | 03:bc:37:ff:b6:5 |
+[    9.987663] cloud-init[695]: ci-info: | enp0s8 | True |              192.168.0.55                 | 255.255.255.0 | global | 09:00:26:68:58:3e |
+[    9.988998] cloud-init[695]: ci-info: | enp0s8 | True | 2804:3f48:f144:3500:a00:27ff:fe69:974e/64 |       .       | global | 09:00:26:68:58:3e |
+[    9.990170] cloud-init[695]: ci-info: | enp0s8 | True |        fe80::a00:27ff:fe69:974e/64        |       .       |  link  | 09:00:26:68:58:3e |
 [    9.991657] cloud-init[695]: ci-info: |   lo   | True |                 127.0.0.1                 |   255.0.0.0   |  host  |         .         |
 [    9.992787] cloud-init[695]: ci-info: |   lo   | True |                  ::1/128                  |       .       |  host  |         .         |
 [    9.996289] cloud-init[695]: ci-info: +--------+------+-------------------------------------------+---------------+--------+-------------------+
@@ -507,7 +507,7 @@ See 'systemctl status home-vagrant.mount' for details.
 [   10.001684] cloud-init[695]: ci-info: |   0   |    0.0.0.0    | 10.0.2.2 |     0.0.0.0     |   enp0s3  |   UG  |
 [   10.002725] cloud-init[695]: ci-info: |   1   |    10.0.2.0   | 0.0.0.0  |  255.255.255.0  |   enp0s3  |   U   |
 [   10.003734] cloud-init[695]: ci-info: |   2   |    10.0.2.2   | 0.0.0.0  | 255.255.255.255 |   enp0s3  |   UH  |
-[   10.004708] cloud-init[695]: ci-info: |   3   | 192.168.100.0 | 0.0.0.0  |  255.255.255.0  |   enp0s8  |   U   |
+[   10.004708] cloud-init[695]: ci-info: |   3   |  192.168.0.55 | 0.0.0.0  |  255.255.255.0  |   enp0s8  |   U   |
 [   10.020198] cloud-init[695]: ci-info: +-------+---------------+----------+-----------------+-----------+-------+
 [   10.021047] cloud-init[695]: ci-info: +++++++++++++++++++++++++Route IPv6 info++++++++++++++++++++++++++
 [   10.021859] cloud-init[695]: ci-info: +-------+--------------------------+---------+-----------+-------+
@@ -602,7 +602,8 @@ See 'systemctl status home-vagrant.mount' for details.
 [   11.840223] cloud-init[1195]: Cloud-init v. 20.3-2-g371b392c-0ubuntu1~18.04.1 finished at Tue, 22 Dec 2020 23:55:37 +0000. Datasource DataSourceNoCloud [seed=/dev/sdb][dsmode=net].  Up 11.83 seconds
 [[0;32m  OK  [0m] Started Execute cloud user/final scripts.
 [[0;32m  OK  [0m] Reached target Cloud-init target.
-
+
+
 Ubuntu 18.04.5 LTS ansible ttyS0
 
 ansible login: 
