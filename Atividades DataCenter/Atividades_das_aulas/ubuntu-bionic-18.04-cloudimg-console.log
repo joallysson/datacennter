@@ -492,7 +492,7 @@ See 'systemctl status Users-takayama-Music-vagrant-mysql.mount' for details.
 [   10.925438] cloud-init[690]: ci-info: +--------+------+-------------------------------------------+---------------+--------+-------------------+
 [   10.926538] cloud-init[690]: ci-info: | enp0s3 | True |                 10.0.2.15                 | 255.255.255.0 | global | 02:bd:38:fa:b3:5d |
 [   10.927644] cloud-init[690]: ci-info: | enp0s3 | True |         fe80::bd:38ff:fefa:b35d/64        |       .       |  link  | 02:bd:38:fa:b3:5d |
-[   10.928859] cloud-init[690]: ci-info: | enp0s8 | True |              192.168.100.159              | 255.255.255.0 | global | 08:00:27:f9:a1:de |
+[   10.928859] cloud-init[690]: ci-info: | enp0s8 | True |             192.168.0.20                  | 255.255.255.0 | global | 08:00:27:f9:a1:de |
 [   10.930582] cloud-init[690]: ci-info: | enp0s8 | True | 2804:3f48:f144:3500:a00:27ff:fef9:a1de/64 |       .       | global | 08:00:27:f9:a1:de |
 [   10.931731] cloud-init[690]: ci-info: | enp0s8 | True |        fe80::a00:27ff:fef9:a1de/64        |       .       |  link  | 08:00:27:f9:a1:de |
 [   10.933519] cloud-init[690]: ci-info: |   lo   | True |                 127.0.0.1                 |   255.0.0.0   |  host  |         .         |
@@ -503,11 +503,11 @@ See 'systemctl status Users-takayama-Music-vagrant-mysql.mount' for details.
 [   10.939725] cloud-init[690]: ci-info: | Route |  Destination  |    Gateway    |     Genmask     | Interface | Flags |
 [   10.941467] cloud-init[690]: ci-info: +-------+---------------+---------------+-----------------+-----------+-------+
 [   10.943344] cloud-init[690]: ci-info: |   0   |    0.0.0.0    |    10.0.2.2   |     0.0.0.0     |   enp0s3  |   UG  |
-[   10.944617] cloud-init[690]: ci-info: |   1   |    0.0.0.0    | 192.168.100.1 |     0.0.0.0     |   enp0s8  |   UG  |
+[   10.944617] cloud-init[690]: ci-info: |   1   |    0.0.0.0    | 192.168.0.1   |     0.0.0.0     |   enp0s8  |   UG  |
 [   10.948425] cloud-init[690]: ci-info: |   2   |    10.0.2.0   |    0.0.0.0    |  255.255.255.0  |   enp0s3  |   U   |
 [   10.950794] cloud-init[690]: ci-info: |   3   |    10.0.2.2   |    0.0.0.0    | 255.255.255.255 |   enp0s3  |   UH  |
-[   10.952885] cloud-init[690]: ci-info: |   4   | 192.168.100.0 |    0.0.0.0    |  255.255.255.0  |   enp0s8  |   U   |
-[   10.954685] cloud-init[690]: ci-info: |   5   | 192.168.100.1 |    0.0.0.0    | 255.255.255.255 |   enp0s8  |   UH  |
+[   10.952885] cloud-init[690]: ci-info: |   4   | 192.168.0.0   |    0.0.0.0    |  255.255.255.0  |   enp0s8  |   U   |
+[   10.954685] cloud-init[690]: ci-info: |   5   | 192.168.0.20  |    0.0.0.0    | 255.255.255.255 |   enp0s8  |   UH  |
 [   10.956493] cloud-init[690]: ci-info: +-------+---------------+---------------+-----------------+-----------+-------+
 [   10.957958] cloud-init[690]: ci-info: +++++++++++++++++++++++++Route IPv6 info++++++++++++++++++++++++++
 [   10.959540] cloud-init[690]: ci-info: +-------+--------------------------+---------+-----------+-------+
@@ -612,7 +612,7 @@ See 'systemctl status Users-takayama-Music-vagrant-mysql.mount' for details.
 
 Ubuntu 18.04.5 LTS mysqldb ttyS0
 
-mysqldb login:                                                                                                           Stopping Session 4 of user vagrant.
+mysqldb login:                                                                                                           Stopping Session 4 of user vagrant.
          Stopping Availability of block devices...
 [[0;32m  OK  [0m] Stopped target Timers.
 [[0;32m  OK  [0m] Stopped Discard unused blocks once a week.

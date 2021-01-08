@@ -30,7 +30,7 @@ Vagrant.configure("2") do |config|
     config.vm.synced_folder ".", "/home/vagrant",type:"virtualbox"
 
     apache.vm.synced_folder ".", "/home/vagrant"
-apache.vm.synced_folder "/Users/joallysson/Music/", "/home/vagrant"
+apache.vm.synced_folder "/Users/joallysson/", "/home/vagrant"
  
 
  
@@ -52,12 +52,12 @@ end
 config.vm.define "mysql" do |mysql|
 mysql.vm.hostname = "mysqldb"
  mysql.vm.network "forwarded_port",guest: 3306, host: 3306
-    mysql.vm.network "public_network", ip:"192.168.0.55"
+    mysql.vm.network "public_network", ip:"192.168.0.20"
 
   
-  #mysql.vm.network "public_network", ip: "192.168.0.55"
+  #mysql.vm.network "public_network", ip: "192.168.0.20"
 mysql.vm.synced_folder ".", "/home/vagrant"
-mysql.vm.synced_folder "/Users/joallysson/Music/vagrant/mysql", "/home/vagrant"
+mysql.vm.synced_folder "/Users/joallysson/vagrant/mysql", "/home/vagrant"
 
   mysql.vm.provision "shell", inline: "cat /home/vagrant/vagrant/id_rsa.pub >> .ssh/authorized_keys"
 mysql.vm.provision "shell", inline: $script_mysql
@@ -68,12 +68,12 @@ mysql.vm.provision "shell", inline: $script_mysql
 config.vm.define "ansible" do |ansible|
 
     ansible.vm.hostname = "ansible"
-    ansible.vm.network "public_network", ip: "192.168.0.55"
+    ansible.vm.network "public_network", ip: "192.168.0.20"
 
     
 
     ansible.vm.synced_folder ".", "/home/vagrant"
-    ansible.vm.synced_folder "/Users/joallysson/Music/vagrant/ansible", "/home/vagrant"
+    ansible.vm.synced_folder "/Users/joallysson/vagrant/ansible", "/home/vagrant"
 
     ansible.vm.provision "shell", inline: $script_ansible
 
